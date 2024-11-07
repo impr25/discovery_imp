@@ -1,0 +1,9 @@
+probe-rs info --probe 0d28:0204  ---> VID:PID at the end of comand
+
+cargo embed --features v2 --target thumbv7em-none-eabihf --probe 0d28:0204 ---> for flashing microbit
+
+arm-none-eabi-gdb ../../target/thumbv7em-none-eabihf/debug/led-roulette  ---> for debugging using gdb 
+
+cargo rustc --features v2 --target thumbv7em-none-eabihf -- --emit asm ---> find assembly code in Target/{profile}/deps/*.s file
+
+ cargo size --features v2 --target thumbv7em-none-eabihf -- -A ---> to get size of final binary add --release to get release size binary
