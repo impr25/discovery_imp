@@ -6,4 +6,4 @@ arm-none-eabi-gdb ../../target/thumbv7em-none-eabihf/debug/led-roulette  ---> fo
 
 cargo rustc --features v2 --target thumbv7em-none-eabihf -- --emit asm ---> find assembly code in Target/{profile}/deps/*.s file
 
-cargo size --features v2 --target thumbv7em-none-eabihf -- -A ---> to get size of final binary add --release to get release size binary
+ cargo size --features v2 --target thumbv7em-none-eabihf -- -A ---> to get size of final binary add --release to get release size binary
