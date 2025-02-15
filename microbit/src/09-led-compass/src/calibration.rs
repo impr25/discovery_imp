@@ -17,9 +17,9 @@ const CALIBRATION_INCREMENT: i32 = 200;
 
 #[derive(Debug)]
 pub struct Calibration {
-    center: Measurement,
-    scale: Measurement,
-    radius: u32,
+    pub center: Measurement,
+    pub scale: Measurement,
+    pub radius: u32,
 }
 
 impl Default for Calibration {
