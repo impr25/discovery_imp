@@ -18,7 +18,6 @@ use crate::control::{get_turn, init_buttons};
 use crate::display::{clear_display, display_image, init_display};
 use crate::game::{Game, GameStatus};
 
-
 #[entry]
 fn main() -> ! {
     rtt_init_print!();
